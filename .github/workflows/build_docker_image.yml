@@ -6,3 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This test is working"
+      - run: git submodule update --init --recursive
