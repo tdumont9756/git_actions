@@ -37,3 +37,4 @@ jobs:
           SAMPLE_DIGEST: ${{ steps.push.outputs.digest }}
         with:
           token: ${{ secrets.TEST_GITHUB_ACTIONS }}
+          app_spec_location: .do/github-actions-tests.yaml
