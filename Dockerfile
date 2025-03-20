@@ -5,6 +5,7 @@ WORKDIR /app
 # RUN cd tux-racer-js &&  git submodule update --init --recursive
 # Copy package.json and package-lock.json (or yarn.lock)
 COPY tux-racer-js/ .
+run pwd
 run ls -l
 # Install dependencies
 RUN npm install
