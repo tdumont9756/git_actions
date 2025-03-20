@@ -2,7 +2,7 @@
 FROM node:20 AS builder
 # Set working directory
 WORKDIR /app
-# RUN cd tux-racer-js &&  git submodule update --init --recursive
+RUN git submodule update --init --recursive
 # Copy package.json and package-lock.json (or yarn.lock)
 COPY tux-racer-js/ .
 run pwd
