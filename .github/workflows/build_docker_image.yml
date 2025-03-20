@@ -36,4 +36,4 @@ jobs:
         env:
           SAMPLE_DIGEST: ${{ steps.push.outputs.digest }}
         with:
-          token: ${{ secrets.TEST_GITHUB_ACTIONS != '' && 'Token Found' || 'Token Not Found' }}
+          token: ${{ secrets.TEST_GITHUB_ACTIONS }}
